@@ -462,7 +462,7 @@ fn fuse_kern_mount(
     }
 
     if let Some(mountpoint) = mountpoint.to_str() {
-        info!(
+        debug!(
             "mount source {} dest {} with fstype {} opts {} fd {}",
             fsname,
             mountpoint,
